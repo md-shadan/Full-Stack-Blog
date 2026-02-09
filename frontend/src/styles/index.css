@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(1200px 800px at 20% 10%, #fff7e6 0%, #f5f2ea 55%, #ece7dd 100%);
+}
+
+.container {
+  max-width: 1100px;
+}
+
+.card {
+  @apply bg-white/80 backdrop-blur border border-black/10 rounded-xl shadow-sm;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-semibold transition;
+}
+
+.btn-primary {
+  @apply bg-ember text-white hover:bg-[#e64a24];
+}
+
+.btn-outline {
+  @apply border border-ink/20 hover:border-ink/50;
+}
+
+.input {
+  @apply w-full rounded-lg border border-ink/20 bg-white/80 px-3 py-2 outline-none focus:border-ink/60;
+}
+
+.label {
+  @apply text-sm font-semibold text-ink/70;
+}
