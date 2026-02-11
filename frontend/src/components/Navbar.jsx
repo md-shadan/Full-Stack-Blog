@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <header className="border-b border-black/10 bg-white/70 backdrop-blur">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <Link to="/" className="text-xl font-bold tracking-tight text-ink">Inkline Blog</Link>
+        <Link to="/" className="text-xl font-bold tracking-tight text-ink">Tech Blog</Link>
         <nav className="flex items-center gap-4">
           <NavLink to="/" className="text-sm font-semibold text-ink/70 hover:text-ink">Home</NavLink>
           {isAuthenticated && (
